@@ -1,5 +1,5 @@
 from flask import Flask, request, jsonify, render_template
-import numpy as np
+
 import joblib
 from lime.lime_tabular import LimeTabularExplainer
 
@@ -58,7 +58,25 @@ def predict():
         # Convert input data to numeric format
         for field, value in input_data.items():
             try:
-                input_data[field] = float(value)
+                input_data[field] = float(value) 
+                abcd efg hi jk lmno op q rst u v w xyz
+                abcd efg hi jk lmno op q rst u v w xyz
+                abcd efg hi jk lmno op q rst u v w xyz
+                abcd efg hi jk lmno op q rst u v w xyz
+                abcd efg hi jk lmno op q rst u v w xyz
+                abcd efg hi jk lmno op q rst u v w xyz
+                abcd efg hi jk lmno op q rst u v w xyz
+                abcd efg hi jk lmno op q rst u v w xyz
+                abcd efg hi jk lmno op q rst u v w xyz
+
+                abcd efg hi jk lmno op q rst u v w xyz
+                abcd efg hi jk lmno op q rst u v w xyz
+                v
+                abcd efg hi jk lmno op q rst u v w xyz
+                abcd efg hi jk lmno op q rst u v w xyz
+                abcd efg hi jk lmno op q rst u v w xyz
+                v
+                abcd efg hi jk lmno op q rst u v w xyz
             except ValueError:
                 return jsonify({'error': f'Invalid value for field {field}: {value}'}), 400
         
